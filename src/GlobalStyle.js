@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
 html {
-  font-size: 62.5%;
+  font-size: 55%; /*62.5
   /* scroll-behavior: smooth; */
   /* 1rem = 10px */
   overflow-x: hidden;
@@ -85,13 +85,13 @@ li {
 ${"" /* resuable code section  */}
 
 .container {
-  max-width: 120rem;
+  max-width: 105rem;
   margin: 0 auto;
 }
 
 .grid {
   display: grid;
-  gap: 9rem;
+  gap: 7rem; 
 }
 
 .grid-two-column {
