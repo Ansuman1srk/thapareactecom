@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../styles/Button";
 import { useCartContext } from "../context/cart_context";
 
+// Hello 
 const AddToCart = ({ product }) => {
   const { addToCart } = useCartContext();
 
