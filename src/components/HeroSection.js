@@ -38,13 +38,16 @@ const Wrapper = styled.section`
     min-width: 10rem;
     height: 10rem;
   }
+  
   .hero-section-data {
     p {
       margin: 2rem 0;
+      color:white;
     }
     h1 {
       text-transform: capitalize;
       font-weight: bold;
+      color:white;
     }
     .intro-data {
       margin-bottom: 0;
