@@ -24,7 +24,8 @@ const Nav = () => {
           font-size: 1.8rem;
           font-weight: 500;
           text-transform: uppercase;
-          color: ${({ theme }) => theme.colors.black};
+          ${'' /* color: ${({ theme }) => theme.colors.black}; */}
+          color: white;
           transition: color 0.3s linear;
         }
         &:hover,

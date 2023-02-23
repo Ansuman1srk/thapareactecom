@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -21,6 +21,7 @@ body {
   overflow-x: hidden;
    scrollbar-color: rgb(98 84 243);
     scrollbar-width: thin;
+    background-color: black;
 }
 
 body::-webkit-scrollbar {
@@ -43,12 +44,13 @@ h1,
 h2,
 h3,
 h4 {
-   font-family: "Work Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
 h1 {
-  color: ${({ theme }) => theme.colors.heading};
+  ${'' /* color: ${({ theme }) => theme.colors.heading}; */}
+  color:white;
   font-size: 6rem;
   font-weight: 900;
 }
