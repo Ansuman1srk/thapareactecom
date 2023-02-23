@@ -55,7 +55,6 @@ const Contact = () => {
               type="text"
               placeholder="username"
               name="username"
-              value = {isAuthenticated ? user.name : ""}
               required
               autoComplete="off"
             />
@@ -65,7 +64,6 @@ const Contact = () => {
               name="Email"
               placeholder="Email"
               autoComplete="off"
-              value = {isAuthenticated ? user.email : ""}
               required
             />
 

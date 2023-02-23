@@ -11,16 +11,18 @@ import { TbTruckDelivery, TbReplace } from "react-icons/tb";
 import Star from "./components/Star";
 import AddToCart from "./components/AddToCart";
 
-const API = "https://api.pujakaitem.com/api/products";
+const API = "http://localhost:3000/mentors";
 
 const SingleProduct = () => {
   const { getSingleProduct, isSingleLoading, singleProduct } =
     useProductContext();
-
+    console.log("This is 000000000000000000", useProductContext());
+    console.log("This is geting 000 Single Product", getSingleProduct());
+    console.log("This is Single 00 Product", singleProduct());
   const { id } = useParams();
-
+  console("Heloooooooooooo", id);
   const {
-    id:
+    id: alias,
     name,
     company,
     price,
@@ -31,8 +33,27 @@ const SingleProduct = () => {
     image,
   } = singleProduct;
 
+    // const {
+    //   _id,
+    //   name,
+    //   price,
+    //   profession,
+    //   description,
+    //   category,
+    //   featured,
+    //   reviews,
+    //   stars,
+    //   image
+    //   } = curElem;
+    // console.log(curElem)
+
+
+
   useEffect(() => {
+    console.log("Use EFFEEECCCTTTTTT");
     getSingleProduct(`${API}?id=${id}`);
+    console.log("This is geting Single Product", getSingleProduct);
+    console.log("This is Single Product", singleProduct);
   }, []);
 
   if (isSingleLoading) {
@@ -41,15 +62,19 @@ const SingleProduct = () => {
 
   return (
     <Wrapper>
-      <PageNavigation title={name} />
+      <PageNavigation title={id} />
       <Container className="container">
-        <div className="grid grid-two-column">
-          {/* product Images  */}
+        <div>
+          <h1>
+            Hello!
+            {name}
+            {id}
+          </h1>
+        </div>
+        {/* <div className="grid grid-two-column">
           <div className="product_images">
             <MyImage imgs={image} />
           </div>
-
-          {/* product dAta  */}
           <div className="product-data">
             <h2>{name}</h2>
             <Star stars={stars} reviews={reviews} />
@@ -101,7 +126,7 @@ const SingleProduct = () => {
             <hr />
             {stock > 0 && <AddToCart product={singleProduct} />}
           </div>
-        </div>
+        </div> */}
       </Container>
     </Wrapper>
   );
