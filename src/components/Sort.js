@@ -57,6 +57,7 @@ const Wrapper = styled.section`
   .sorting-list--grid {
     display: flex;
     gap: 2rem;
+    
     .sort-btn {
       padding: 0.8rem 1rem;
       border: none;
@@ -64,6 +65,7 @@ const Wrapper = styled.section`
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      color:black;
     }
     .icon {
       font-size: 1.6rem;

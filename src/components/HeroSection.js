@@ -38,7 +38,9 @@ const Wrapper = styled.section`
     min-width: 10rem;
     height: 10rem;
   }
-  
+  .container{
+    background-color: black;
+  }
   .hero-section-data {
     p {
       margin: 2rem 0;

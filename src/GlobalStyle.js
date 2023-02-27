@@ -21,7 +21,7 @@ body {
   overflow-x: hidden;
    scrollbar-color: rgb(98 84 243);
     scrollbar-width: thin;
-    background-color: black;
+    ${'' /* background-color: black; */}
 }
 
 body::-webkit-scrollbar {
@@ -69,7 +69,8 @@ h3 {
 }
 
 p, button {
-  color: ${({ theme }) => theme.colors.text};
+  ${'' /* color: ${({ theme }) => theme.colors.text}; */}
+  color:white;
   font-size: 1.65rem;
   line-height: 1.5;
   font-weight:400;
