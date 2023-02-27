@@ -21,7 +21,7 @@ body {
   overflow-x: hidden;
    scrollbar-color: rgb(98 84 243);
     scrollbar-width: thin;
-    ${'' /* background-color: black; */}
+    background-color: black;
 }
 
 body::-webkit-scrollbar {
