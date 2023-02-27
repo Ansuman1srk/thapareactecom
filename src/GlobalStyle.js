@@ -69,7 +69,8 @@ h3 {
 }
 
 p, button {
-  color: ${({ theme }) => theme.colors.text};
+  ${'' /* color: ${({ theme }) => theme.colors.text}; */}
+  color:white;
   font-size: 1.65rem;
   line-height: 1.5;
   font-weight:400;

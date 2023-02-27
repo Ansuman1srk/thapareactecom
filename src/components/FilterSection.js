@@ -154,6 +154,7 @@ const Wrapper = styled.section`
   h3 {
     padding: 2rem 0;
     font-size: bold;
+    color:white;
   }
   .filter-search {
     input {
@@ -182,9 +183,11 @@ const Wrapper = styled.section`
       }
     }
   }
+  
   .filter-company--select {
     padding: 0.3rem 1.2rem;
     font-size: 1.6rem;
+  
     color: ${({ theme }) => theme.colors.text};
     text-transform: capitalize;
   }
